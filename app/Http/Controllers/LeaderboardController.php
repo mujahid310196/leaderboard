@@ -30,7 +30,7 @@ class LeaderboardController extends Controller
 
         $users = $query->get();
 
-        // Calculate Ranks
+        //Calculate Ranks
         $rank = 1;
         $lastPoints = null;
         $lastRank = 1;

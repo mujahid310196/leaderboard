@@ -8,15 +8,13 @@ use App\Models\Activity;   // ✅ Import Activity model
 
 class ActivitySeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
+
     public function run()
     {
         $users = User::all();
 
         foreach ($users as $user) {
-            // Give each user between 10 and 30 activities
+            
             $count = rand(10, 30);
 
             for ($i = 0; $i < $count; $i++) {

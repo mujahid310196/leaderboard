@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\User; // ✅ Import the User model
+use App\Models\User;
 
 class UserSeeder extends Seeder
 {
@@ -12,6 +12,6 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory()->count(50)->create(); // 50 dummy users
+        User::factory()->count(50)->create();
     }
 }
